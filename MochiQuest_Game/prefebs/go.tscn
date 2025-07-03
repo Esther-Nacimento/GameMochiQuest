@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://be62xsuqmoovm"]
+
+[ext_resource type="Texture2D" uid="uid://bq51tjurnpjyi" path="res://assets/Mini FX, Items & UI/Mini FX, Items & UI/Food Items/Sushi_Variety (16 x 16).png" id="1_15u4e"]
+[ext_resource type="Script" uid="uid://ctkytvxneit51" path="res://scripts/go.gd" id="1_un677"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_un677"]
+radius = 14.1421
+
+[sub_resource type="Animation" id="Animation_scsaw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4cwff"]
+resource_name = "float"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.333333, 0.343915, 0.352781, 0.519755),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -0.550657), Vector2(0, -1.03537), Vector2(0, -12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xwxld"]
+_data = {
+&"RESET": SubResource("Animation_scsaw"),
+&"float": SubResource("Animation_4cwff")
+}
+
+[node name="go" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_un677")
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_15u4e")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_un677")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_xwxld")
+}
+autoplay = "float"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

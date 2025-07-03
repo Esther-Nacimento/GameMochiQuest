@@ -1,0 +1,304 @@
+[gd_scene load_steps=45 format=3 uid="uid://cagl2lvq6sjqh"]
+
+[ext_resource type="Script" uid="uid://cjl8xwe7uo87g" path="res://scripts/game_over.gd" id="1_cqjq4"]
+[ext_resource type="Texture2D" uid="uid://beb8pvjfnrdof" path="res://menu/Cenas_Menu/assets_menu/you_win.jpg" id="2_cqjq4"]
+[ext_resource type="Theme" uid="uid://co8apjrtctjoi" path="res://new_theme.tres" id="3_4v5um"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xjfpx"]
+
+[sub_resource type="Resource" id="Resource_1hmbm"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile000.png"
+
+[sub_resource type="Animation" id="Animation_l3jms"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("Resource_1hmbm")]
+}
+
+[sub_resource type="Resource" id="Resource_fndyf"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile000.png"
+
+[sub_resource type="Resource" id="Resource_pueb3"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile001.png"
+
+[sub_resource type="Resource" id="Resource_7hcp3"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile002.png"
+
+[sub_resource type="Resource" id="Resource_2wh6i"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile003.png"
+
+[sub_resource type="Resource" id="Resource_e1db6"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile004.png"
+
+[sub_resource type="Resource" id="Resource_4lkv6"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile005.png"
+
+[sub_resource type="Resource" id="Resource_r2i4e"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile006.png"
+
+[sub_resource type="Resource" id="Resource_vd8ax"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile007.png"
+
+[sub_resource type="Resource" id="Resource_xriul"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile008.png"
+
+[sub_resource type="Resource" id="Resource_ue36o"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile009.png"
+
+[sub_resource type="Resource" id="Resource_asji0"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile010.png"
+
+[sub_resource type="Resource" id="Resource_njp7n"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile011.png"
+
+[sub_resource type="Resource" id="Resource_5xka1"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile012.png"
+
+[sub_resource type="Resource" id="Resource_ufkhr"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile013.png"
+
+[sub_resource type="Resource" id="Resource_l1m1h"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile014.png"
+
+[sub_resource type="Resource" id="Resource_jl6oj"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile015.png"
+
+[sub_resource type="Resource" id="Resource_188nd"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile016.png"
+
+[sub_resource type="Resource" id="Resource_lfahl"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile017.png"
+
+[sub_resource type="Resource" id="Resource_bpj3c"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile018.png"
+
+[sub_resource type="Resource" id="Resource_fuftd"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile019.png"
+
+[sub_resource type="Resource" id="Resource_3m1sq"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile020.png"
+
+[sub_resource type="Resource" id="Resource_yvvyg"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile021.png"
+
+[sub_resource type="Resource" id="Resource_ltt8h"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile022.png"
+
+[sub_resource type="Resource" id="Resource_8ukgv"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile023.png"
+
+[sub_resource type="Resource" id="Resource_pu2ol"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile024.png"
+
+[sub_resource type="Resource" id="Resource_opfwn"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile025.png"
+
+[sub_resource type="Resource" id="Resource_pb2fm"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile026.png"
+
+[sub_resource type="Resource" id="Resource_6pb47"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile027.png"
+
+[sub_resource type="Resource" id="Resource_rgrn6"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile028.png"
+
+[sub_resource type="Resource" id="Resource_ivc2i"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile029.png"
+
+[sub_resource type="Resource" id="Resource_3syhm"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile030.png"
+
+[sub_resource type="Resource" id="Resource_41wm1"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile031.png"
+
+[sub_resource type="Resource" id="Resource_nvc2g"]
+metadata/__load_path__ = "res://ezgif-split (1)idle/tile032.png"
+
+[sub_resource type="Animation" id="Animation_mf6iy"]
+resource_name = "gameover"
+length = 8.0
+loop_mode = 1
+step = 0.0333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.566667, 0.833333, 1.06667, 1.36667, 1.63333, 1.9, 2.2, 2.46667, 2.7, 2.9, 3.1, 3.26667, 3.43333, 3.63333, 3.93333, 4.2, 4.5, 4.76667, 5.03333, 5.26667, 5.53333, 5.8, 6.06667, 6.33333, 6.63333, 6.93333, 7.06667, 7.23333, 7.46667, 7.6, 7.86667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Resource_fndyf"), SubResource("Resource_pueb3"), SubResource("Resource_7hcp3"), SubResource("Resource_2wh6i"), SubResource("Resource_e1db6"), SubResource("Resource_4lkv6"), SubResource("Resource_r2i4e"), SubResource("Resource_vd8ax"), SubResource("Resource_xriul"), SubResource("Resource_ue36o"), SubResource("Resource_asji0"), SubResource("Resource_njp7n"), SubResource("Resource_5xka1"), SubResource("Resource_ufkhr"), SubResource("Resource_l1m1h"), SubResource("Resource_jl6oj"), SubResource("Resource_188nd"), SubResource("Resource_lfahl"), SubResource("Resource_bpj3c"), SubResource("Resource_fuftd"), SubResource("Resource_3m1sq"), SubResource("Resource_yvvyg"), SubResource("Resource_ltt8h"), SubResource("Resource_8ukgv"), SubResource("Resource_pu2ol"), SubResource("Resource_opfwn"), SubResource("Resource_pb2fm"), SubResource("Resource_6pb47"), SubResource("Resource_rgrn6"), SubResource("Resource_ivc2i"), SubResource("Resource_3syhm"), SubResource("Resource_41wm1"), SubResource("Resource_nvc2g")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b0llr"]
+_data = {
+&"RESET": SubResource("Animation_l3jms"),
+&"gameover": SubResource("Animation_mf6iy")
+}
+
+[sub_resource type="Animation" id="Animation_pueb3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_o5oj1"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0365345, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_003fx"]
+_data = {
+&"RESET": SubResource("Animation_pueb3"),
+&"fade_in": SubResource("Animation_o5oj1")
+}
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cqjq4")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 641.0
+offset_bottom = 324.0
+expand_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 1.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -80.0
+offset_right = 84.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Gameover" type="TextureRect" parent="VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_cqjq4")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("3_4v5um")
+text = "Restart"
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xjfpx")
+
+[node name="HSeparator4" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xjfpx")
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_4v5um")
+text = "Quit Game"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(198, 541)
+scale = Vector2(4.92, 4.92188)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Sprite2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_b0llr")
+}
+autoplay = "gameover"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -4.561
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_003fx")
+}
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer/Quit" method="_on_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_finished"]

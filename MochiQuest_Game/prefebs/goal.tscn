@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxkpqlxs5gk21"]
+
+[ext_resource type="Script" uid="uid://c4s82fss6lxsf" path="res://scripts/goal.gd" id="1_etatr"]
+[ext_resource type="Texture2D" uid="uid://bq51tjurnpjyi" path="res://assets/Mini FX, Items & UI/Mini FX, Items & UI/Food Items/Sushi_Variety (16 x 16).png" id="1_uauqw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_etatr"]
+radius = 12.0
+
+[sub_resource type="Animation" id="Animation_ggtbu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0.8)]
+}
+
+[sub_resource type="Animation" id="Animation_etatr"]
+resource_name = "float"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5049),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0.8), Vector2(0, -12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxh3i"]
+_data = {
+&"RESET": SubResource("Animation_ggtbu"),
+&"float": SubResource("Animation_etatr")
+}
+
+[node name="goal" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_etatr")
+next_level = "\"res://levels/world_02.tscn\""
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(0, 0.8)
+texture = ExtResource("1_uauqw")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1, -6)
+shape = SubResource("CircleShape2D_etatr")
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_xxh3i")
+}
+autoplay = "float"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,16 @@
+res://actors/enemy.tscn::4ef5b3364abfadc44ba9ba11bac2555b::1751401801::res://.godot/exported/133200997/export-61e27e8a0642b62a00179865da5b591c-enemy.scn
+res://actors/player.tscn::7febdd4a3ee80b6aea2cc35688e08ad9::1751401810::res://.godot/exported/133200997/export-e86f95e5088e93066d258d9192ab0748-player.scn
+res://levels/Sem alterações/world_01.tscn::ccff6d49265fe450af673bb988717726::1751403249::res://.godot/exported/133200997/export-11edde80103b67defd82620a78b9323e-world_01.scn
+res://levels/Sem alterações/world_02.tscn::b14441de8b27033057c7ff734ef04756::1751403249::res://.godot/exported/133200997/export-13d2d92e63c76db4f4cdfd10d25177d9-world_02.scn
+res://levels/Sem alterações/world_03.tscn::565f937b42c57339f571920134693cb9::1751403250::res://.godot/exported/133200997/export-aaa42095dc06410f627b47dd5c8511fb-world_03.scn
+res://menu/Cenas_Menu/game_over.tscn::051958d7483882ca8a1f770d1c557585::1751403250::res://.godot/exported/133200997/export-a13a56190c561b9a71d67f0b508731c1-game_over.scn
+res://menu/Cenas_Menu/title_screen.tscn::68515e9b96d7a651667e8b6d95da55a2::1751403250::res://.godot/exported/133200997/export-e3c880738d7bd656b791b9dddb2022b6-title_screen.scn
+res://menu/Cenas_Menu/you_win.tscn::33b584ac337b69f95d3936184df65da6::1751403250::res://.godot/exported/133200997/export-5d440cdb6384309e00d7430ca9ba780b-you_win.scn
+res://prefebs/coin.tscn::1331d56cb26b03dc8a69c97d2ae8090b::1751401172::res://.godot/exported/133200997/export-5094c250d8282d8b5e14e577c487e593-coin.scn
+res://prefebs/go.tscn::414c6fee5f71c16ff3a5b768d176c0f0::1751403250::res://.godot/exported/133200997/export-9325a136a56abd1296f83cd8d87ba637-go.scn
+res://prefebs/goal.tscn::b01bbaf6973d9c639084c09ecee5e2bc::1751403250::res://.godot/exported/133200997/export-f27cb8046335a7c115292de7150a389a-goal.scn
+res://prefebs/hitbox.tscn::729b129d11ba3020600053c9837eae78::1751401172::res://.godot/exported/133200997/export-6dcd3442058650cfec15d3395be2339a-hitbox.scn
+res://prefebs/moving_platform.tscn::68125bee45f18f4c046c5c57afb458ce::1751401172::res://.godot/exported/133200997/export-03fede8146ba67979bc2314feef72cc9-moving_platform.scn
+res://prefebs/pause_menu.tscn::deda64eeb6f8c11f5a6fca5e3152d84d::1751401172::res://.godot/exported/133200997/export-5ae4c45d600ecb56fa38fa45d1c52f2d-pause_menu.scn
+res://new_theme.tres::ab873cc2fac43b67259760fb5303ca1c::1751402647::res://.godot/exported/133200997/export-de75b109a0ef34bfbb9569df46f58a57-new_theme.res
+res://pause_menu.tres::6eacf067213d78df0fe482272ba7e81c::1751401140::res://.godot/exported/133200997/export-f70ff4f5f0b884056c6739f7652c7518-pause_menu.res

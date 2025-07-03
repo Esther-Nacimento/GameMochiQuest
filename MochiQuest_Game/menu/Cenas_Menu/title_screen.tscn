@@ -1,0 +1,111 @@
+[gd_scene load_steps=8 format=3 uid="uid://brnrtm0g2rk7e"]
+
+[ext_resource type="Texture2D" uid="uid://behftc7rt510o" path="res://menu/Cenas_Menu/assets_menu/title-screen.jpg" id="1_1extw"]
+[ext_resource type="Script" uid="uid://dtlygbwsj8sya" path="res://scripts/title_screen.gd" id="1_i7sh0"]
+[ext_resource type="Texture2D" uid="uid://pg7p5sq30irc" path="res://menu/Cenas_Menu/assets_menu/game_logo.png" id="2_ipf4i"]
+[ext_resource type="Theme" uid="uid://co8apjrtctjoi" path="res://new_theme.tres" id="3_ipf4i"]
+[ext_resource type="Texture2D" uid="uid://c41e1ggvw7sm1" path="res://assets/Cat Game Assets/Cat Game Assets/Tilesets/Cat1_Running.png" id="3_wmvtv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wmvtv"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_wmvtv"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i7sh0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(102, 239)
+scale = Vector2(2.6675, 2.3875)
+region_enabled = true
+region_rect = Rect2(0, 0, 48, 64)
+region_filter_clip_enabled = true
+
+[node name="Title-screen" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(81.7244, -35.1832)
+scale = Vector2(0.185977, 0.206152)
+texture = ExtResource("1_1extw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(8.05998, 0.523568)
+scale = Vector2(0.976257, 0.840969)
+texture = ExtResource("3_wmvtv")
+region_enabled = true
+region_rect = Rect2(0, 0, 48, 64)
+
+[node name="GameLogo" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(84.3486, -66.5968)
+scale = Vector2(0.374883, 0.418848)
+texture = ExtResource("2_ipf4i")
+
+[node name="bg" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+
+[node name="start" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 8
+theme = ExtResource("3_ipf4i")
+text = "Start"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_wmvtv")
+
+[node name="start2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_ipf4i")
+text = "Credits"
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_wmvtv")
+
+[node name="start3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme = ExtResource("3_ipf4i")
+text = "Quit Game"
+icon = SubResource("ImageTexture_wmvtv")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -4.561
+autoplay = true
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/start2" to="." method="_on_start_2_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/start3" to="." method="_on_start_3_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_finished"]
